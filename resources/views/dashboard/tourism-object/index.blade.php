@@ -46,7 +46,7 @@
         @else
           <tr>
             <td colspan="4" class="text-danger text-center p-4">
-              <h4>You haven't create any tourism objects yet</h4>
+              <h4>You haven't create any Lecturer objects yet</h4>
             </td>
           </tr>
         @endif

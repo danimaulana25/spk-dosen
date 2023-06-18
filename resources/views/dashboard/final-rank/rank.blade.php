@@ -42,7 +42,7 @@
     </table>
 
     <div class="d-sm-flex align-items-center justify-content-between align-items-center my-4">
-      <h1 class="h3 mb-0 text-gray-800">Tourism Rank</h1>
+      <h1 class="h3 mb-0 text-gray-800">Lecturer Rank</h1>
     </div>
 
     <table class="table table-bordered">

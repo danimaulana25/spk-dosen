@@ -14,7 +14,7 @@ class AuthController extends Controller
   public function index()
   {
     $data = [
-      'title' => 'SPK Objek Wisata | Sign In',
+      'title' => 'SPK Kinerja Dosen | Sign In',
     ];
 
     return view('auth.signin', $data);
@@ -23,7 +23,7 @@ class AuthController extends Controller
   public function signUp()
   {
     $data = [
-      'title' => 'SPK Objek Wisata | Sign Up',
+      'title' => 'SPK Kinerja Dosen | Sign Up',
     ];
 
     return view('auth.signup', $data);
