@@ -117,7 +117,7 @@
 
               @csrf
               <div class="my-2">
-                <label for="tourism_object_id" class="form-label">Tourism Object</label>
+                <label for="tourism_object_id" class="form-label">Lecturer Object</label>
                 <select class="form-select @error('tourism_object_id') 'is-invalid' : ''  @enderror" id="tourism_object_id" name="tourism_object_id" required>
                   @if ($tourism_objects->count())
                     <option disabled selected>--Choose One--</option>

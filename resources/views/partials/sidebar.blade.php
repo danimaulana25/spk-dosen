@@ -40,7 +40,7 @@
         <li class="nav-item">
           <a class="nav-link {{ Request::is('dashboard/tourism-objects*') ? 'active' : '' }}" href="/dashboard/tourism-objects">
             <span data-feather="camera"></span>
-            Tourism Objects
+            Lecturer Objects
           </a>
         </li>
         <li class="nav-item">

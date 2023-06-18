@@ -10,7 +10,7 @@
     @csrf
 
     <div class="mb-3">
-      <label for="name" class="form-label">Name</label>
+      <label for="name" class="form-label">Kode</label>
       <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{ old('name', $object->name) }}" autofocus required>
 
       @error('name')
@@ -21,7 +21,7 @@
     </div>
 
     <div class="mb-3">
-      <label for="address" class="form-label">Address</label>
+      <label for="address" class="form-label">Name</label>
       <input type="text" class="form-control @error('address') is-invalid @enderror" id="address" name="address" value="{{ old('address', $object->address) }}" required>
 
       @error('address')

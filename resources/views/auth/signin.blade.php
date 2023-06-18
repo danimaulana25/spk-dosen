@@ -36,7 +36,7 @@
       </div>
 
       <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-      <p class="mt-3 mb-3 text-muted">&copy; SPK Objek Wisata {{ now()->year }}</p>
+      <p class="mt-3 mb-3 text-muted">&copy; SPK Kinerja Dosen {{ now()->year }}</p>
     </form>
   </main>
 @endsection

@@ -10,7 +10,7 @@
     @csrf
 
     <div class="mb-3">
-      <label for="name" class="form-label">Selected Tourism Name</label>
+      <label for="name" class="form-label">Selected Lecturer Name</label>
       <input type="text" class="form-control" id="name" value="{{ old('name', $alternative->name) }}" readonly required>
 
       @error('name')
