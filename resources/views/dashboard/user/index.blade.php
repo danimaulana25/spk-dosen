@@ -8,14 +8,14 @@
   <div class="table-responsive col-lg-10">
     <a href="/dashboard/users/create" class="btn btn-primary mb-3">
       <span data-feather="plus"></span>
-      Create New User
+      Tambah User
     </a>
 
     <table class="table table-striped">
       <thead>
         <tr>
           <th scope="col" class="text-center">#</th>
-          <th scope="col" class="text-center">Name</th>
+          <th scope="col" class="text-center">Nama</th>
           <th scope="col" class="text-center">Username</th>
           <th scope="col" class="text-center">Level</th>
           <th scope="col" class="text-center">Action</th>

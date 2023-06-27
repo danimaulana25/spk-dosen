@@ -2,15 +2,15 @@
 
 @section('content')
   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Comparison Results</h1>
+    <h1 class="h2">Hasil Perbandingan</h1>
   </div>
 
   <div class="table-responsive col-lg-12">
     <div class="d-lg-flex justify-content-between gap-2">
-      <h1 class="h3 mb-0 text-gray-800">Result of Calculated Criteria Comparisons</h1>
+      <h1 class="h3 mb-0 text-gray-800">Perhitungan bobot prioritas</h1>
       <a href="/dashboard/criteria-comparisons/{{ $criteria_analysis->id }}" class="btn btn-secondary mb-3">
         <span data-feather="arrow-left"></span>
-        Back To Comparisons Values
+        Kembali Ke Perbandingan Data
       </a>
     </div>
 
@@ -53,9 +53,9 @@
       </tbody>
     </table>
 
-    {{-- Preventive Values --}}
+    {{-- Priority Weights --}}
     <div class="d-sm-flex align-items-center justify-content-between align-items-center my-4">
-      <h1 class="h3 mb-0 text-gray-800">Result of Calculated Preventive Values</h1>
+      <h1 class="h3 mb-0 text-gray-800">Nilai Rata-rata(Priority weight)</h1>
     </div>
 
     <table class="table table-bordered">
@@ -65,7 +65,7 @@
           @foreach ($criteria_analysis->preventiveValues as $preventValue)
             <th scope="col" class="text-center">{{ $preventValue->criteria->name }}</th>
           @endforeach
-          <th scope="col" class="text-center bg-secondary text-white">Preventive Value</th>
+          <th scope="col" class="text-center bg-secondary text-white">Priority Weight</th>
         </tr>
       </thead>
       <tbody>
@@ -90,11 +90,11 @@
         @endforeach
       </tbody>
     </table>
-    {{-- Preventive Values --}}
+    {{-- Priority Weights --}}
 
     {{-- Consistency Ratio --}}
     <div class="d-sm-flex align-items-center justify-content-between align-items-center my-4">
-      <h1 class="h3 mb-0 text-gray-800">Result of Calculated Consistency Ratio</h1>
+      <h1 class="h3 mb-0 text-gray-800">Perkalian matriks dengan PW</h1>
     </div>
 
     <table class="table table-bordered">
@@ -134,6 +134,10 @@
       </tbody>
     </table>
 
+    <div class="d-sm-flex align-items-center justify-content-between align-items-center my-4">
+      <h1 class="h3 mb-0 text-gray-800">Bagi hasil dengan Priority weight</h1>
+    </div>
+
     {{-- Lambda --}}
     <table class="table table-borderless">
       <thead style="border-bottom: 1px solid #E3E6F0;">
@@ -141,7 +145,7 @@
           <th scope="col"></th>
           <th scope="col" class="text-center">Row Total</th>
           <th></th>
-          <th scope="col" class="text-center">Preventive Value</th>
+          <th scope="col" class="text-center">Priority Weight</th>
           <th scope="col" class="text-center">Result</th>
         </tr>
       </thead>
@@ -178,17 +182,21 @@
       </tbody>
     </table>
 
+    <div class="d-sm-flex align-items-center justify-content-between align-items-center my-4">
+      <h1 class="h3 mb-0 text-gray-800">Hasil Perhitungan Consistency Ratio</h1>
+    </div>
+
     {{-- Final Result --}}
     <div class="row d-lg-flex justify-content-center">
       <div class="col-12 col-lg-6">
         <table class="table table-bordered">
           <tbody>
             <tr>
-              <th scope="row">Number of Criteria</th>
+              <th scope="row">Jumlah Kriteria</th>
               <td>{{ $criteria_analysis->preventiveValues->count() }}</td>
             </tr>
             <tr>
-              <th scope="row">Average</th>
+              <th scope="row">Rata Rata</th>
               <td>{{ $lambdaMax }}</td>
             </tr>
             <tr>

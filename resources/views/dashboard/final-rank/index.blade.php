@@ -16,7 +16,7 @@
     }
   </style>
   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Final Rank</h1>
+    <h1 class="h2">Perangkingan Akhir</h1>
   </div>
 
   <div class="table-responsive col-lg-10">
@@ -40,7 +40,7 @@
               @if ($isAbleToRank)
                 <td class="text-center">
                   <a href="/dashboard/final-ranking/{{ $analysis->id }}" class="badge bg-success text-decoration-none">
-                    See Final Ranking
+                    Lihat Perangkingan Akhir
                   </a>
                 </td>
               @else

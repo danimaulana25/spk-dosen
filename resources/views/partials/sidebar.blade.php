@@ -19,13 +19,13 @@
       <li class="nav-item">
         <a class="nav-link {{ Request::is('dashboard/criteria-comparisons*') ? 'active' : '' }}" href="/dashboard/criteria-comparisons">
           <span data-feather="columns"></span>
-          Criteria Comparisons
+          Perbandingan Kriteria
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link {{ Request::is('dashboard/final-ranking*') ? 'active' : '' }}" href="/dashboard/final-ranking">
           <span data-feather="award"></span>
-          Final Rank
+          Hasil Perangkingan Akhir
         </a>
       </li>
     </ul>
@@ -40,19 +40,19 @@
         <li class="nav-item">
           <a class="nav-link {{ Request::is('dashboard/tourism-objects*') ? 'active' : '' }}" href="/dashboard/tourism-objects">
             <span data-feather="camera"></span>
-            Lecturer Objects
+            Data Dosen
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link {{ Request::is('dashboard/criterias*') ? 'active' : '' }}" href="/dashboard/criterias">
             <span data-feather="flag"></span>
-            Criterias
+            Kriteria
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link {{ Request::is('dashboard/alternatives*') ? 'active' : '' }}" href="/dashboard/alternatives">
             <span data-feather="briefcase"></span>
-            Alternatives
+            Alternatif
           </a>
         </li>
 

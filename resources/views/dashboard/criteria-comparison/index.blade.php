@@ -16,13 +16,13 @@
     }
   </style>
   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Criteria Comparisons</h1>
+    <h1 class="h2">Perbandingan Kriteria</h1>
   </div>
 
   <div class="table-responsive col-lg-10">
     <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#modalChoose">
       <span data-feather="check-square"></span>
-      Choose criteria
+      Pilih Kriteria
     </button>
 
     <table class="table table-striped">
@@ -44,7 +44,7 @@
               <td class="text-center">{{ $comparison->created_at->toFormattedDateString() }}</td>
               <td class="text-center">
                 <a href="/dashboard/criteria-comparisons/{{ $comparison->id }}" class="badge bg-success text-decoration-none">
-                  See Comparison Values
+                  Lihat nilai perbandingan
                 </a>
                 <form action="/dashboard/criteria-comparisons/{{ $comparison->id }}" method="POST" class="d-inline">
                   @method('delete')
@@ -73,7 +73,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalChooseLabel">Choose Criteria</h5>
+          <h5 class="modal-title" id="modalChooseLabel">Pilih Kriteria</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <form action="/dashboard/criteria-comparisons" method="POST">
@@ -82,8 +82,8 @@
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th scope="col" class="text-center" colspan="2">Name</th>
-                  <th scope="col" class="text-center">Attribute</th>
+                  <th scope="col" class="text-center" colspan="2">Nama</th>
+                  <th scope="col" class="text-center">Atribut</th>
                 </tr>
               </thead>
               <tbody>
@@ -99,7 +99,7 @@
                   @endforeach
                 @else
                   <tr>
-                    <td class="text-center text-danger" colspan="4">No criteria found</td>
+                    <td class="text-center text-danger" colspan="4">Kriteria Tidak Ditemukan</td>
                   </tr>
                 @endif
               </tbody>
@@ -107,7 +107,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Continue</button>
+            <button type="submit" class="btn btn-primary">Lanjut</button>
           </div>
         </form>
       </div>

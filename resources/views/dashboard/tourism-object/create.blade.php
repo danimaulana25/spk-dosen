@@ -2,7 +2,7 @@
 
 @section('content')
   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Create New Tourism Object</h1>
+    <h1 class="h2">Tambah Data Dosen</h1>
   </div>
 
   <form class="col-lg-8" method="POST" action="/dashboard/tourism-objects">
@@ -20,7 +20,7 @@
     </div>
 
     <div class="mb-3">
-      <label for="address" class="form-label">Name</label>
+      <label for="address" class="form-label">Nama</label>
       <input type="text" class="form-control @error('address') is-invalid @enderror" id="address" name="address" value="{{ old('address') }}" required>
 
       @error('address')

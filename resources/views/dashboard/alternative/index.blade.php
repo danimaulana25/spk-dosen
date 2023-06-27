@@ -16,21 +16,21 @@
     }
   </style>
   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Alternatives</h1>
+    <h1 class="h2">Alternatif</h1>
   </div>
 
   <div class="table-responsive">
     <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addAlternativeModal">
       <span data-feather="plus"></span>
-      Create New Alternative
+      Tambah Alternatif
     </button>
 
     <table class="table table-bordered">
       <thead class="table-dark">
           <tr>
             <th class="text-center align-middle" rowspan="2">#</th>
-            <th class="text-center align-middle" rowspan="2">Alternative's Name</th>
-            <th class="text-center" colspan="{{ $criterias->count() }}">Criterias</th>
+            <th class="text-center align-middle" rowspan="2">Nama Alternatif</th>
+            <th class="text-center" colspan="{{ $criterias->count() }}">Kriteria</th>
             <th class="text-center align-middle" rowspan="2">Action</th>
           </tr>
           <tr>
@@ -97,7 +97,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="addAlternativeModalLabel">Add Alternative</h5>
+          <h5 class="modal-title" id="addAlternativeModalLabel">Tambah Alternatif</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <form action="/dashboard/alternatives" method="post">
@@ -117,7 +117,7 @@
 
               @csrf
               <div class="my-2">
-                <label for="tourism_object_id" class="form-label">Lecturer Object</label>
+                <label for="tourism_object_id" class="form-label">Data Dosen</label>
                 <select class="form-select @error('tourism_object_id') 'is-invalid' : ''  @enderror" id="tourism_object_id" name="tourism_object_id" required>
                   @if ($tourism_objects->count())
                     <option disabled selected>--Choose One--</option>
@@ -160,7 +160,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-            <button type="{{ $criterias->count() ? "submit" : "button" }}" class="btn btn-primary">Add Alternative</button>
+            <button type="{{ $criterias->count() ? "submit" : "button" }}" class="btn btn-primary">Tambah Alternatif</button>
           </div>
         </form>
       </div>

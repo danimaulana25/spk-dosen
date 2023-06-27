@@ -10,7 +10,7 @@
     @csrf
 
     <div class="mb-3">
-      <label for="title" class="form-label">Fullname</label>
+      <label for="title" class="form-label">Nama Lengkap</label>
       <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{ old('name', $userData->name) }}" required>
 
       @error('name')
@@ -32,7 +32,7 @@
     </div>
 
     <div class="mb-3">
-      <label for="title" class="form-label">Email Address</label>
+      <label for="title" class="form-label">Alamat Email</label>
       <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" value="{{ old('email', $userData->email) }}" required>
 
       @error('email')

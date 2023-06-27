@@ -2,20 +2,20 @@
 
 @section('content')
   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Criterias</h1>
+    <h1 class="h2">Kriteria</h1>
   </div>
 
   <div class="table-responsive col-lg-10">
     <a href="/dashboard/criterias/create" class="btn btn-primary mb-3">
       <span data-feather="plus"></span>
-      Create New Criteria
+      Tambah Kriteria
     </a>
 
     <table class="table table-striped">
       <thead>
         <tr>
           <th scope="col" class="text-center">#</th>
-          <th scope="col" class="text-center">Name</th>
+          <th scope="col" class="text-center">Nama</th>
           <th scope="col" class="text-center">Attribute</th>
           <th scope="col" class="text-center">Action</th>
         </tr>

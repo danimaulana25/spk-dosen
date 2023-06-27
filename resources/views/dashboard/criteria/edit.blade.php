@@ -10,7 +10,7 @@
     @csrf
 
     <div class="mb-3">
-      <label for="name" class="form-label">Name</label>
+      <label for="name" class="form-label">Nama</label>
       <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{ old('name', $criteria->name) }}" autofocus required>
 
       @error('name')
@@ -21,7 +21,7 @@
     </div>
 
     <div class="mb-3">
-      <label for="attribute" class="form-label">Attribute</label>
+      <label for="attribute" class="form-label">Atribut</label>
       <select class="form-select @error("attribute") is-invalid @enderror" id="attribute" name="attribute" required>
         <option value="" disabled selected>Choose One</option>
         <option value="BENEFIT" {{ old('attribute', $criteria->attribute) === 'BENEFIT' ?  'selected' : '' }}>Benefit</option>

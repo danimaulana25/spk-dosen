@@ -2,13 +2,13 @@
 
 @section('content')
   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Lecturer Objects</h1>
+    <h1 class="h2">Data Dosen</h1>
   </div>
 
   <div class="table-responsive col-lg-10">
     <a href="/dashboard/tourism-objects/create" class="btn btn-primary mb-3">
       <span data-feather="plus"></span>
-      Create New Lecturer Objects
+      Tambah Data Dosen 
     </a>
 
     <table class="table table-striped">

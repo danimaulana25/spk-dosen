@@ -2,20 +2,20 @@
 
 @section('content')
   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Input Criteria Comparison Value</h1>
+    <h1 class="h2">Nilai Perbandingan Kriteria Masukan</h1>
   </div>
 
   <div class="table-responsive col-lg-12">
     <div class="d-lg-flex justify-content-end gap-2">
       <a href="/dashboard/criteria-comparisons" class="btn btn-secondary mb-3">
         <span data-feather="arrow-left"></span>
-        Back To Comparisons Data
+        Kembali Ke Perbandingan Data
       </a>
 
       @if ($isDoneCounting)
       <a href="/dashboard/criteria-comparisons/result/{{ $criteria_analysis->id }}" class="btn btn-success mb-3 ml-4">
         <span data-feather="clipboard"></span>
-        See Comparison Result
+        Lihat Hasil Perbandingan
       </a>
       @endif
     </div>

@@ -7,10 +7,10 @@
 
   <div class="table-responsive col-lg-12">
     <div class="d-lg-flex justify-content-between gap-2">
-      <h1 class="h3 mb-0 text-gray-800">Normalization Table</h1>
+      <h1 class="h3 mb-0 text-gray-800">Tabel Normalisasi</h1>
       <a href="/dashboard/final-ranking" class="btn btn-secondary mb-3">
         <span data-feather="arrow-left"></span>
-        Back To Final Ranks
+        Kembali ke Peringkat Akhir
       </a>
     </div>
 
@@ -42,7 +42,7 @@
     </table>
 
     <div class="d-sm-flex align-items-center justify-content-between align-items-center my-4">
-      <h1 class="h3 mb-0 text-gray-800">Lecturer Rank</h1>
+      <h1 class="h3 mb-0 text-gray-800">Perangkingan Dosen</h1>
     </div>
 
     <table class="table table-bordered">
